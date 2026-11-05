@@ -1,28 +1,33 @@
-const input = document.querySelector('#favchap');
-const botao = document.querySelector('button');
-const lista = document.querySelector('#list');
+document.addEventListener('DOMContentLoaded', function() {
 
-botao.addEventListener('click', function() {
+    const input = document.querySelector('#favchap');
+    const botao = document.querySelector('button');
+    const lista = document.querySelector('#list');
 
-    if (input.value.trim() !== '') {
+    botao.addEventListener('click', function() {
 
-        const li = document.createElement('li');
-        const botaoExcluir = document.createElement('button');
+        if (input.value.trim() !== '') {
 
-        li.textContent = input.value;
+            const li = document.createElement('li');
+            const botaoExcluir = document.createElement('button');
 
-        botaoExcluir.textContent = '❌';
+            li.textContent = input.value;
 
-        li.append(botaoExcluir);
+            botaoExcluir.textContent = '❌';
 
-        lista.append(li);
+            li.append(botaoExcluir);
 
-        botaoExcluir.addEventListener('click', function () {
-            lista.removeChild(li);
+            lista.append(li);
+
+            botaoExcluir.addEventListener('click', function() {
+                lista.removeChild(li);
+                input.focus();
+            });
+
+            input.value = '';
             input.focus();
-        });
+        }
+    });
 
-        input.value = '';
-        input.focus();
-    }
 });
+
