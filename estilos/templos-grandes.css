@@ -1,8 +1,7 @@
 @media screen and (min-width: 700px) {
 
     nav {
-        justify-content: space-around;
-         display: flex;
+        display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
@@ -13,8 +12,7 @@
     }
 
     #menu-button {
-    display: none;
-}
-
+        display: none;
+    }
 
 }
