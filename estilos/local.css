@@ -1,4 +1,13 @@
 /* CONFIGURAÇÕES GERAIS */
+
+/* VARIÁVEIS CSS */
+:root {
+    --cor-principal: #1B4965;
+    --cor-destaque: #087443;
+    --cor-fundo: #dcefdc;
+    --cor-branco: #ffffff;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -23,9 +32,16 @@ header {
     border-bottom: 7px solid #087443;
 }
 
-header h1 {
-    font-size: 1.8rem;
+header h1::after {
+    content: "";
+    display: block;
+    width: 500px;
+    height: 5px;
+    background-color: #087443;
+    margin: 12px auto 0;
+    border-radius: 5px;
 }
+
 
 /* IMAGEM PRINCIPAL */
 .imagem-principal {
