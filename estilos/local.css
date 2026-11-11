@@ -1,0 +1,92 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dcefdc;
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #1B4965;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    border-bottom: 7px solid #087443;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+/* IMAGEM PRINCIPAL */
+.imagem-principal {
+    display: block;
+    width: 100%;
+}
+
+.imagem-principal img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* SEÇÃO DATA */
+.data {
+    background-color: white;
+    text-align: left;
+    padding: 15px;
+}
+
+.data h2 {
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+}
+
+.data p,
+.weather p {
+    font-size: 0.85rem;
+    line-height: 1.8;
+}
+
+/* SEÇÃO CLIMA */
+.weather {
+    background-color: white;
+    text-align: left;
+    padding: 15px;
+    border-top: 1px solid #eeeeee;
+}
+
+.weather h2 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.weather-mobile {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 10px auto;
+}
+
+.weather-desktop {
+    display: none;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #1B4965;
+    color: white;
+    text-align: center;
+    padding: 18px 10px;
+    font-size: 0.8rem;
+    line-height: 1.7;
+}

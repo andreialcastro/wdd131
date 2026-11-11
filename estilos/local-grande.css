@@ -1,0 +1,94 @@
+/* DESIGN PARA TELAS GRANDES */
+@media screen and (min-width: 650px) {
+
+    body {
+        width: 95%;
+        padding: 10px 0;
+    }
+
+    header {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    /* IMAGEM COMO FUNDO DO CONTEÚDO */
+    main {
+        position: relative;
+        height: 450px;
+        overflow: hidden;
+    }
+
+    .imagem-principal {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+    }
+
+    .imagem-principal img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* CAIXA DATA */
+    .data {
+        position: absolute;
+        top: 20px;
+        left: 15px;
+        width: 250px;
+        padding: 12px;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.88);
+        z-index: 1;
+    }
+
+    .data h2 {
+        background-color: #087443;
+        color: white;
+        text-align: left;
+        padding: 10px;
+        margin-bottom: 12px;
+        font-size: 1.1rem;
+    }
+
+    /* CAIXA CLIMA */
+    .weather {
+        position: absolute;
+        top: 120px;
+        right: 15px;
+        width: 250px;
+        padding: 12px;
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.88);
+        border: none;
+        z-index: 1;
+    }
+
+    .weather h2 {
+        background-color: #087443;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+
+    .weather-mobile {
+        display: none;
+    }
+
+    .weather-desktop {
+        display: inline;
+    }
+
+    /* RODAPÉ */
+    footer {
+        padding: 25px;
+        font-size: 0.8rem;
+    }
+}

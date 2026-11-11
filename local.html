@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapada Diamantina</title>
+    <meta name="description" content="A Chapada Diamantina fica no interior da Bahia e é conhecida por suas belas paisagens naturais.">
+    <meta name="author" content="Andreia Leal de Castro">
+    <link rel="stylesheet" href="estilos/local.css">
+    <link rel="stylesheet" href="estilos/local-grande.css">
+    <script src="scripts/local.js" defer></script>
+</head>
+<body>
+<header>
+    <h1>Chapada Diamantina</h1>
+</header>
+<main>
+<picture class="imagem-principal">
+    <source
+        media="(min-width: 650px)"
+        srcset="imagens/chapada-diamantina-grande.webp">
+
+    <img
+        src="imagens/chapada-diamantina-pequeno.webp"
+        alt="Paisagem da Chapada Diamantina, na Bahia"
+        loading="lazy">
+</picture>
+
+    <section class="data">
+        <h2>Data</h2>
+
+        <p><strong>Localização:</strong> Bahia, Brasil</p>
+        <p><strong>Região:</strong> Nordeste</p>
+        <p><strong>Parque Nacional:</strong> Criado em 1985</p>
+        <p><strong>Área do parque:</strong> 152 mil hectares</p>
+        <p><strong>Principal cidade:</strong> Lençóis</p>
+        <p><strong>Vegetação:</strong> Cerrado e Caatinga</p>
+        <p><strong>Relevo:</strong> Serras e montanhas</p>
+        <p><strong>Atração:</strong> Cachoeira da Fumaça</p>
+    </section>
+
+     <section class="weather">
+        <h2>
+            Clima
+            <span class="weather-desktop">⛅</span>
+        </h2>
+
+        <img
+            class="weather-mobile"
+            src="imagens/clima-parcial.svg"
+            alt="Parcialmente nublado">
+
+        <p><strong>Clima:</strong> Tropical de altitude</p>
+        <p><strong>Condições:</strong> Parcialmente nublado</p>
+        <p><strong>Temperatura:</strong> 22 °C</p>
+        <p><strong>Velocidade do vento:</strong> 5 km/h</p>
+
+<p>
+    <strong>Sensação térmica:</strong>
+    <span id="sensacao-termica">N/A</span>
+</p>
+       
+    </section>
+</main>
+
+
+<footer>
+    <p>
+        &copy;<span id="anoatual"></span> Andreia Leal de Castro — Rio Grande do Norte, Brasil
+    </p>
+     <p id="ultimaModificacao"></p>
+</footer>
+</body>
+</html>
