@@ -1,0 +1,32 @@
+/* TELAS GRANDES */
+@media screen and (min-width: 700px) {
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    main {
+        max-width: 1200px;
+    }
+
+    #menu-button {
+        display: none;
+    }
+}
+
+/* TABLETS */
+@media screen and (min-width: 551px) and (max-width: 800px) {
+    .temples-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 550px) {
+    .temples-container {
+        grid-template-columns: 1fr;
+        padding: 12px;
+    }
+}

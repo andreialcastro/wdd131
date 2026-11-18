@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album do Templo</title>
+    <meta name="description" content="Explore um álbum de fotografias dos templos de A Igreja de Jesus Cristo dos Santos dos Últimos Dias, com imagens e informações sobre cada templo.">
+    <meta name="author" content="Andreia Leal de Castro">
+    <link rel="stylesheet" href="estilos/templos-filtrados.css">
+    <link rel="stylesheet" href="estilos/templos-grandes-filtrados.css">
+    <script src="scripts/templos-filtrados.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Redaction+10:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+<header>
+    <h1>Álbum do Templo</h1>
+
+    <button id="menu-button" aria-label="Abrir menu"
+        aria-expanded="false">
+        ☰
+    </button>
+    
+    <nav>
+    <a href="#" data-filter="todos">Página Inicial</a>
+    <a href="#" data-filter="antigos">Antigos</a>
+    <a href="#" data-filter="novos">Novos</a>
+    <a href="#" data-filter="grandes">Grandes</a>
+    <a href="#" data-filter="pequenos">Pequenos</a>
+</nav>
+
+</header>
+<main>
+<h2>Página Inicial</h2>
+  <div id="temples-container" class="temples-container">
+    </div>
+</main>
+
+<footer>
+<p>
+        &copy;<span id="anoatual"></span> Andreia Leal de Castro — Rio Grande do Norte, Brasil
+    </p>
+     <p id="ultimaModificacao"></p>
+</footer>
+</body>
+</html>
