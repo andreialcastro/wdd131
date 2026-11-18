@@ -3,7 +3,8 @@
 
     body {
         width: 95%;
-        padding: 10px 0;
+        max-width: 1400px;
+        padding: 10px;
     }
 
     header {
@@ -14,10 +15,10 @@
         font-size: 2rem;
     }
 
-    /* IMAGEM COMO FUNDO DO CONTEÚDO */
+    /* IMAGEM PRINCIPAL */
     main {
         position: relative;
-        height: 450px;
+        min-height: 520px;
         overflow: hidden;
     }
 
@@ -38,12 +39,12 @@
     /* CAIXA DATA */
     .data {
         position: absolute;
-        top: 20px;
-        left: 15px;
-        width: 250px;
-        padding: 12px;
+        top: 25px;
+        left: 25px;
+        width: 280px;
+        padding: 15px;
         text-align: left;
-        background-color: rgba(255, 255, 255, 0.88);
+        background-color: rgba(255, 255, 255, 0.92);
         z-index: 1;
     }
 
@@ -53,18 +54,18 @@
         text-align: left;
         padding: 10px;
         margin-bottom: 12px;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     /* CAIXA CLIMA */
     .weather {
         position: absolute;
-        top: 120px;
-        right: 15px;
-        width: 250px;
-        padding: 12px;
+        top: 25px;
+        right: 25px;
+        width: 280px;
+        padding: 15px;
         text-align: left;
-        background-color: rgba(255, 255, 255, 0.88);
+        background-color: rgba(255, 255, 255, 0.92);
         border: none;
         z-index: 1;
     }
@@ -74,7 +75,7 @@
         color: white;
         padding: 10px;
         text-align: left;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-bottom: 12px;
     }
 
@@ -89,6 +90,6 @@
     /* RODAPÉ */
     footer {
         padding: 25px;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
 }
