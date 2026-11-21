@@ -151,25 +151,25 @@ function filterTemples(category) {
 
     switch (category) {
 
-        case "antigos":
+        case "antigo":
             filteredTemples = templos.filter(templo =>
                 new Date(templo.consagracao).getFullYear() < 1900
             );
             break;
 
-        case "novos":
+        case "novo":
             filteredTemples = templos.filter(templo =>
                 new Date(templo.consagracao).getFullYear() > 2000
             );
             break;
 
-        case "grandes":
+        case "grande":
             filteredTemples = templos.filter(templo =>
                 templo.area > 90000
             );
             break;
 
-        case "pequenos":
+        case "pequeno":
             filteredTemples = templos.filter(templo =>
                 templo.area < 10000
             );
