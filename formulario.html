@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulário de Avaliação de Produtos">
+    <meta name="author" content="Andreia Leal de Castro">
+    <title>Avaliação de Produtos</title>
+    <link rel="stylesheet" href="estilos/formulario.css">
+</head>
+<body>
+    <header>
+        <h1>Avaliação de Produtos</h1>
+        <p>Compartilhe sua experiência conosco!</p>
+
+    </header>
+
+    <main>
+        <h2>Formulário de Avaliação</h2>
+
+        <form method="get" action="avaliacao.html">
+
+        <!--Nome do produto-->
+        <div>
+            <label for="produto">Nome do Produto:*</label>
+            <select id="produto" name="produto" required>
+            <option value="" disabled selected>Selecione um Produto...</option>
+            </select>
+        </div>
+
+        <!--Classificação-->
+
+    <fieldset>
+        <legend>Classificação Geral:*</legend>
+
+        <div class="rating">
+            <label for="estrela1">
+                <input type="radio" id="estrela1"
+                name="classificacao" value="1" required>
+                ☆ 1
+            </label>
+             <label for="estrela2">
+                        <input type="radio" id="estrela2"
+                        name="classificacao" value="2" required>
+                        ☆ 2
+                    </label>
+
+                    <label for="estrela3">
+                        <input type="radio" id="estrela3"
+                        name="classificacao" value="3" required>
+                        ☆ 3
+                    </label>
+
+                    <label for="estrela4">
+                        <input type="radio" id="estrela4"
+                        name="classificacao" value="4" required>
+                        ☆ 4
+                    </label>
+
+                    <label for="estrela5">
+                        <input type="radio" id="estrela5"
+                        name="classificacao" value="5" required>
+                        ☆ 5
+                    </label>
+        </div>
+    </fieldset>
+
+    <!--Data-->
+    <div>
+        <label for="data">Data de Instalação*</label>
+        <input type="date" id="data" name="data" required>
+    </div>
+    <!-- Recursos Úteis -->
+            <fieldset class="features">
+                <legend>Recursos Úteis:</legend>
+
+                <label for="durabilidade">
+                    <input type="checkbox" id="durabilidade"
+                    name="recursos" value="Durabilidade">
+                    Durabilidade
+                </label>
+
+                <label for="facilidade">
+                    <input type="checkbox" id="facilidade"
+                    name="recursos" value="Facilidade de uso">
+                    Facilidade de uso
+                </label>
+
+                <label for="desempenho">
+                    <input type="checkbox" id="desempenho"
+                    name="recursos" value="Desempenho">
+                    Desempenho
+                </label>
+
+                <label for="design">
+                    <input type="checkbox" id="design"
+                    name="recursos" value="Design">
+                    Design
+                </label>
+            </fieldset>
+
+            <!-- Avaliação Escrita -->
+            <div>
+                <label for="avaliacao">Avaliação Escrita (Opcional):</label>
+                <textarea id="avaliacao" name="avaliacao"
+                rows="5"
+                placeholder="Escreva sua opinião sobre o produto..."></textarea>
+            </div>
+
+            <!-- Nome de Usuário -->
+            <div>
+                <label for="usuario">Nome de Usuário (Opcional):</label>
+                <input type="text" id="usuario" name="usuario"
+                placeholder="Digite seu nome">
+            </div>
+
+            <!-- Botão de Envio -->
+            <input type="submit" value="Enviar Avaliação">
+
+        </form>
+
+    </main>
+    
+    <footer>
+        <p>
+        &copy;<span id="anoatual"></span> Andreia Leal de Castro — Rio Grande do Norte, Brasil
+    </p>
+     <p id="ultimaModificacao"></p>
+    </footer>
+
+    <script src="scripts/formulario.js" defer></script>
+</body>
+</html>
